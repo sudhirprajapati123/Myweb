@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple House</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .roof {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 80px solid #d9534f;
+      margin: 0 auto;
+    }
+    .house {
+      width: 200px;
+      height: 150px;
+      background-color: #5bc0de;
+      margin: 0 auto;
+      position: relative;
+    }
+    .door {
+      width: 60px;
+      height: 100px;
+      background-color: #292b2c;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 70px;
+    }
+    .window {
+      width: 50px;
+      height: 50px;
+      background-color: #292b2c;
+      position: absolute;
+    }
+    .window.left {
+      top: 40px;
+      left: 20px;
+    }
+    .window.right {
+      top: 40px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="roof"></div>
+        <div class="house">
+          <div class="door"></div>
+          <div class="window left"></div>
+          <div class="window right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
